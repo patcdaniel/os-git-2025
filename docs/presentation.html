@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link rel="stylesheet" href="styles.css">
@@ -219,30 +154,46 @@ Patrick Daniel
 </section>
 <section id="version-control" class="slide level2">
 <h2>Version Control</h2>
-<p>A way of <strong>tracking</strong> and <u>managing</u> changes made to files overtime. <br><br>
-<strong>git</strong> is very popular, but other open VC include:</p>
+<div>
 <ul>
-<li>Mercurial</li>
-<li>SVN</li>
-<li>Source Code Control System</li>
+<li class="fragment"><p>A way of <strong>tracking</strong> and <u>managing</u> changes made to files overtime.</p></li>
+<li class="fragment"><p><strong>git</strong> is very popular, but other open VC include:</p>
+<ul>
+<li class="fragment">Mercurial</li>
+<li class="fragment">SVN</li>
+<li class="fragment">Source Code Control System</li>
+</ul></li>
 </ul>
+</div>
 </section>
 <section id="what-is-git" class="slide level2">
 <h2>What is git?</h2>
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="200"></p>
-<p><strong>Free, open source, distributed, version control system</strong></p>
-<p>Git is a software for managing software development through time and space.</p>
-<p>Created by: Linus Torvalds (created the Linux Kernel) <img data-src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg" width="200"></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div>
+<ul>
+<li><p><strong>Free, open source, distributed, version control system</strong></p></li>
+<li><p>Git is a software for managing software development through time and space.<br>
+</p></li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg" style="width:80.0%"><br>
+<span style="font-size:18px;">Created by: Linus Torvalds (created the Linux Kernel)</span></p>
+</div></div>
 </section>
 <section id="what-about-github" class="slide level2">
 <h2>What about Github?</h2>
-<p>Github is a <strong>Microsoft</strong> owned business service that is used to store and distribute code repositories (and many other very useful services). <br> Some other DevOP git-based repository:</p>
+<p>Github (<strong>Microsoft</strong>) is a DevOPS service used to store and distribute code repositories that <strong>uses <code>git</code></strong>. <br><br>
+Some other DevOP git-based repository:</p>
+<div>
 <ul>
-<li>bitbucket (Atlassian)</li>
-<li>gitlab (open core: git.ucsc.edu)</li>
-<li>HuggingFace (for Models and Datasets (large data))</li>
+<li class="fragment">bitbucket (Atlassian)</li>
+<li class="fragment">gitlab (open core: git.ucsc.edu)</li>
+<li class="fragment">HuggingFace (for Models and Datasets (large data))</li>
 </ul>
-<p>These services all use the <code>git</code> software as the foundation for Version Control.</p>
+</div>
 </section>
 <section id="what-problems-does-vc-solve" class="slide level2">
 <h2>What problems does VC solve?</h2>
@@ -281,18 +232,28 @@ Patrick Daniel
 </section>
 <section id="however-github-is-not-a-data-repository" class="slide level2">
 <h2>However, GitHUB is NOT a Data Repository</h2>
+<div class="fragment fade-in">
 <p>There is no guaranetee that something you upload to github will persist. <br></p>
-<p>So if you want to <strong>archive</strong> data or code with a paper or dataset there are other places to put it so that it will not dissapear one day if you lose your account or Microsoft changes their business models.</p>
+</div>
+<p><br></p>
+<div class="fragment fade-in">
+<p>Better places to <strong>archive</strong> data or code with a paper or dataset, though better than nothing!</p>
+</div>
+<p><br></p>
+<div class="fragment fade-in">
 <p>See <strong>Zenodo</strong> or <strong>DataOne</strong> or more domain specific data repositories (GBIF, OBIS, WOD)</p>
+</div>
 </section>
 <section id="basic-git-workflow" class="slide level2">
 <h2>Basic GIT workflow</h2>
+<div>
 <ol type="1">
-<li>Create files - these may contain text, code or both.</li>
-<li>Work on these files, by changing, deleting or adding new content.</li>
-<li>Create a snapshot of the file status (also known as version) at this time.</li>
-<li>Document what was changed in the version history of that file.</li>
+<li class="fragment">Create files - these may contain text, code or both.</li>
+<li class="fragment">Work on these files, by changing, deleting or adding new content.</li>
+<li class="fragment">Create a snapshot of the file status (also known as version) at this time.</li>
+<li class="fragment">Document what was changed in the version history of that file.</li>
 </ol>
+</div>
 <div class="footer">
 <p>Text and Figures from: https://book.the-turing-way.org</p>
 </div>
@@ -300,19 +261,20 @@ Patrick Daniel
 <section id="linear-development" class="slide level2">
 <h2>Linear Development</h2>
 <p><br> <br> <img data-src="https://book.the-turing-way.org/_images/main-branch.png"> <br> <br> Suppose you need to get back to a previous version of your code.</p>
-<p>This alone solves a lot of problems</p>
 </section>
 <section id="non-linear-development" class="slide level2">
 <h2>Non-linear Development</h2>
 <p><strong>Adding a Feature:</strong> <br> <img data-src="https://book.the-turing-way.org/_images/one-branch.png"> <br></p>
 <p>You maybe working on a new feature that allows you to read different types of files, but processes still runs the same analysis.</p>
+<div>
 <p><strong>When that standalone feature is completed, it can be added back into the main working branch</strong></p>
+</div>
 </section>
 <section id="non-linear-development-1" class="slide level2">
 <h2>Non-linear Development</h2>
-<p><strong>Real Life Development:</strong> <br> <img data-src="https://book.the-turing-way.org/_images/sub-branch.png"> <br></p>
-<p>Here things may get more complicated, suppose you start and abandon something (Feature B) or your data-reader gets expanded further during development (Feature A to Feature A-1).</p>
-<p>This may seem like overkill for a project that you are working on yourself, but if you develop a popular package and others start to ask for features or better yet, offer to add their own features, this is what modern software development looks like.</p>
+<p><strong>Real Life Development:</strong> <br></p>
+
+<img data-src="https://book.the-turing-way.org/_images/sub-branch.png" style="width:90.0%" class="r-stretch"><p><span style="font-size: 23px; font-weight: bold;">This may seem like overkill for a project that you are working on yourself, but if you develop a popular package and others start to ask for features or better yet, offer to add their own features, this is what modern software development looks like.</span></p>
 </section>
 <section>
 <section id="start-your-engines" class="title-slide slide level1 center">
@@ -329,37 +291,51 @@ Patrick Daniel
 <section id="try-it-out" class="slide level2">
 <h2>Try it out</h2>
 <p><strong>Let’s all try this out in the <code>command line</code></strong>:</p>
+<div>
 <ul>
-<li>Open a terminal.</li>
-<li>Make a new directory: <code>mkdir learning-git</code></li>
-<li>Move into that diretory: <code>cd learning-git</code></li>
-<li>Initialize a repo: <code>git init</code><br>
+<li class="fragment">Open a terminal.</li>
+<li class="fragment">Make a new directory: <code>mkdir learning-git</code></li>
+<li class="fragment">Move into that diretory: <code>cd learning-git</code></li>
+<li class="fragment">Initialize a repo: <code>git init</code><br>
 </li>
-<li>Check what is going on: <code>git status</code> (you should see some about ‘No commits yet’, if it says fatal, no repo was initialized)</li>
+<li class="fragment">Check what is going on: <code>git status</code> (you should see some about ‘No commits yet’, if it says fatal, no repo was initialized)<br>
+</li>
 </ul>
+</div>
 </section>
 <section id="checking-if-it-worked" class="slide level2">
 <h2>Checking if it worked</h2>
-<p><br> Try running: <strong><code>git status</code></strong> <br> <img data-src="media/git-status.png"></p>
+<p><br> Try running: <strong><code>git status</code></strong> <br> <img data-src="media/git-status.png" style="width:60.0%"></p>
 </section>
 <section id="now-make-a-file-and-add-it-to-git" class="slide level2">
 <h2>Now Make a file and add it to git</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><br> <strong>Try these bash commands</strong>:</p>
 <p><br></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a>   <span class="fu">touch</span> file.txt <span class="co">#This will make an empty file call file.txt</span></span>
-<span id="cb6-2"><a></a>   <span class="fu">git</span> add file.txt</span>
-<span id="cb6-3"><a></a>   <span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>These are ‘staged’ changes</strong> <img data-src="media/git-status-2.png"></p>
+<div>
+<ul>
+<li class="fragment"><code>touch file.txt</code></li>
+<li class="fragment"><code>git add file.txt</code></li>
+<li class="fragment"><code>git status</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<p><img data-src="media/git-status-2.png" style="width:100.0%"><br>
+<strong>These are ‘staged’ changes</strong></p>
+</div></div>
 </section>
 <section id="commit" class="slide level2">
 <h2>Commit!</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a>   <span class="fu">git</span> commit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>git expects a message when you make a commit, so it may open <code>vim</code> editor.</p>
+<div>
 <ul>
-<li><code>vim</code>: type in your messages, press <code>esc</code>, then <code>:x</code> to write out to the file. Ask if you are stuck!</li>
+<li class="fragment"><strong><code>git commit</code></strong> <br> git expects a message when you make a commit, so it may open <code>vim</code> editor.<br><code>vim</code>: type in your messages, press <code>esc</code>, then <code>:x</code> to write out to the file. Ask if you are stuck!</li>
 </ul>
-<p><strong>Tip: Make you messages meaningful, but short</strong></p>
-<p><strong>Instead, include an inline message:</strong></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a></a>   <span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"This is my commit message"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<ul>
+<li class="fragment"><strong>Instead, include an inline message:</strong><br><code>git commit -m "This is my commit message"</code></li>
+</ul>
+</div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
@@ -371,72 +347,87 @@ This shows our last commit, the hash associated with it, and the message
 </section>
 <section id="excercise" class="slide level2">
 <h2>Excercise</h2>
+<p><br> <br></p>
+<div>
 <ol type="1">
-<li>Add some text to the file.txt</li>
-<li>Add the file to git (hint: <strong><code>git add .</code></strong> will add all files in dir)</li>
-<li>Commit the staged files</li>
-<li>View the log</li>
+<li class="fragment">Add some text to the file.txt</li>
+<li class="fragment">Add the file to git (hint: <strong><code>git add .</code></strong> will add all files in dir)</li>
+<li class="fragment">Commit the staged files</li>
+<li class="fragment">View the log</li>
 </ol>
+</div>
 </section>
-<section id="reverting-to-old-commits" class="slide level2">
-<h2>Reverting to Old Commits</h2>
-<p>What if you want to go back to an older commit?</p>
-
-<img data-src="media/git-log-2.png" class="r-stretch"><p>Last Commit: <strong><code>git revert HEAD</code></strong> (this is like a reverse commit)</p>
-<p>Older Commit: <strong><code>git checkout 4d95c68fa8060e34f08d9e4309d13873af9a5881</code></strong> (enter the hash of that commit, not mine)</p>
-<p>This called a <strong>“detached HEAD”</strong> –&gt; If you want to go in a direction you need a <strong>branch</strong></p>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p><strong>What if you want to go back to an older commit?</strong></p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="media/git-log-2.png" style="width:100.0%"></p>
+</div><div class="column" style="width:60%;">
+<div>
+<ul>
+<li class="fragment"><p>Last Commit: <strong><code>git revert HEAD</code></strong> (this is like a reverse commit)</p></li>
+<li class="fragment"><p>Older Commit: <span style="font-size:24px;"><strong><code>git checkout 4d95c68fa8060e34f08d9e4309d13873af9a5881</code></strong></span> (enter the hash of that commit, not mine)<br>This called a <strong>“detached HEAD”</strong> –&gt; Not at the front of the branch.</p></li>
+</ul>
+</div>
+</div></div>
 </section>
 <section id="branches-creating" class="slide level2">
 <h2>Branches: Creating</h2>
-
-<img data-src="https://book.the-turing-way.org/_images/one-branch.png" class="r-stretch"><p>Those splits are called branches, this a nice way to try something without writing over the <code>main</code> branch.</p>
-<p><br> <br> To Create and Switch to a new Branch:</p>
+<p><img data-src="https://book.the-turing-way.org/_images/one-branch.png"><br>
+<br><br>
+Those splits are called branches, this a nice way to try something without writing over the <code>main</code> branch.</p>
+<div class="fragment fade-in">
+<p><strong>To Create and Switch to a new Branch:</strong></p>
 <p><strong><code>git checkout -b name_of_your_new_branch</code></strong></p>
+</div>
 </section>
 <section id="branches-switching-between" class="slide level2">
 <h2>Branches: Switching Between</h2>
-<strong><code>git branch</code></strong>
+<div>
+<ul>
+<li class="fragment"><strong><code>git branch</code></strong>
 <p style="font-size: 22px;">
 show different branches
-</p>
-<strong><code>git checkout name_of_branch</code></strong>
+</p></li>
+<li class="fragment"><strong><code>git checkout name_of_branch</code></strong>
 <p style="font-size: 22px;">
 change to the <code>name_of_branch</code> branch
-</p>
-<strong><code>git branch -D name_of_branch</code></strong>
+</p></li>
+<li class="fragment"><strong><code>git branch -D name_of_branch</code></strong>
 <p style="font-size: 22px;">
-Delete <code>name_of_branch</code> branch
-</p>
-<p style="font-size: 22px;">
-Note: <code>main</code> is the default branch. (Used to be <code>master</code>, but this has been phased out)
-</p>
-<p><strong>Excercise</strong>:</p>
-<p>Create and checkout a new branch. Add a file to it and commit the new file (and any other changes)</p>
+Delete <code>name_of_branch</code> branch <br><br> Note: <code>main</code> is the default branch. (Used to be <code>master</code>, but this has been phased out)
+</p></li>
+</ul>
+</div>
+<div class="fragment fade-in">
+<p>Excercise:<br><strong>Create and checkout a new branch. Add a file to it and commit the new file (and any other changes)</strong></p>
+</div>
 </section>
 <section id="merging-branches" class="slide level2">
 <h2>Merging Branches</h2>
-<p>Once you have completed the cool feature that you want to integrate into the <code>main</code> branch, you will need to <strong><code>merge</code></strong>.</p>
-<p>Move into the the branch that you want merged into.</p>
-<p><strong><code>git merge name_of_branch</code></strong></p>
-<p><br> <br></p>
-<p style="font-size: 22px;">
+<p>Once you have completed the cool feature that you want to integrate into the <code>main</code> branch, you will need to <strong><code>merge</code></strong>.<br>
+<br></p>
+<div class="fragment fade-in">
+<p>Move into the the branch that you want merged into (<code>main</code>). <br><br>
+<strong><code>git merge name_of_branch</code></strong></p>
+</div>
+<p><br></p>
+<div class="fragment fade-in">
+<p style="font-size: 24px;">
 You can get into trouble here if you make changes to your <code>main</code> branch and that will conflict with the changes make in your other branch that you are trying to merge in. This is a bit beyond the scope of what we are talking about here, but it will be illustrated later.
 </p>
+</div>
 </section></section>
-<section>
 <section id="break" class="title-slide slide level1 center">
 <h1>Break</h1>
 <p>Let’s take a short break. Ask Question</p>
 <p>The next part will be working with github.</p>
+
+
 </section>
-<section id="working-with-github" class="slide level2">
-<h2>Working With Github</h2>
-
-
-</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="media/sammy.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
