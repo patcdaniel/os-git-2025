@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OS Skill Share: Add, Commit, and Push: an introduction to git",
     "section": "",
-    "text": "About this site"
+    "text": "https://xkcd.com/1597/\nThis website provides a step-by-step guide to using Git for version control. Click on Git Basics in the navigation bar to get started."
+  },
+  {
+    "objectID": "index.html#goal",
+    "href": "index.html#goal",
+    "title": "OS Skill Share: Add, Commit, and Push: an introduction to git",
+    "section": "Goal",
+    "text": "Goal\nThe goal of this Skill Sharing Workshop is to get everyone introduced to Version Control in scientific computing using git and to get hands on practice “developing” a project with other students."
+  },
+  {
+    "objectID": "index.html#getting-setup",
+    "href": "index.html#getting-setup",
+    "title": "OS Skill Share: Add, Commit, and Push: an introduction to git",
+    "section": "Getting Setup",
+    "text": "Getting Setup\n\nInstalling the git CLI\nFor those attending, here things will go much smoother if come with some way to interact with git installed:\nThere are a million ways, but the simplest would be through the command line interface (CLI)\nOn MacOS & Linux (most distros) git is shipped with operating system. The simplest way to check if you have it and what version you are using is to open a terminal (using terminal application) and typing:\ngit --version\nYou should see some repsonse that looks like:\ngit version 2.39.5 (Apple Git-154)\nOn Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs.\n\n\nAfterwards\nOnce we get beyond the CLI, you may want to move to your code editor or IDE of choice (R studio, pycharm, VS Code etc) all have git integrated into them.\nIn VS Code:\n\nIn RStudio:\nIf there is an existing repository, you have to add a “New Project” in that directory first, then you will see:\n\nThese may be a more comfortable way to manage your project, but under the hood, they are really just doing the same couple of commands with `git` that we are going to use"
   },
   {
     "objectID": "presentation.html#add-commit-and-push-an-introduction-to-git",
@@ -67,27 +81,104 @@
     "href": "presentation.html#linear-development",
     "title": "Git Overview",
     "section": "Linear Development",
-    "text": "Linear Development\n     Suppose you need to get back to a previous version of your code."
+    "text": "Linear Development\n     Suppose you need to get back to a previous version of your code.\nThis alone solves a lot of problems"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Git Tutorial",
-    "section": "",
-    "text": "This website provides a step-by-step guide to using Git for version control. Click on Git Basics in the navigation bar to get started.\n\n\nThe goal of this Skill Sharing Workshop is to get everyone introduced to Version Control in scientific computing using git and to get hands on practice “developing” a project with other students.\n## Getting Setup ##\nFor those attending, here things will go much smoother if come with some way to interact with git installed:\nThere are a million ways, but the simplest would be through the command line interface (CLI) which is included with MacOS or most Linux distros.\nOn Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs."
+    "objectID": "presentation.html#non-linear-development",
+    "href": "presentation.html#non-linear-development",
+    "title": "Git Overview",
+    "section": "Non-linear Development",
+    "text": "Non-linear Development\nAdding a Feature:   \nYou maybe working on a new feature that allows you to read different types of files, but processes still runs the same analysis.\nWhen that standalone feature is completed, it can be added back into the main working branch"
   },
   {
-    "objectID": "index.html#goal",
-    "href": "index.html#goal",
-    "title": "Git Tutorial",
-    "section": "",
-    "text": "The goal of this Skill Sharing Workshop is to get everyone introduced to Version Control in scientific computing using git and to get hands on practice “developing” a project with other students.\n## Getting Setup ##\nFor those attending, here things will go much smoother if come with some way to interact with git installed:\nThere are a million ways, but the simplest would be through the command line interface (CLI) which is included with MacOS or most Linux distros.\nOn Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs."
+    "objectID": "presentation.html#non-linear-development-1",
+    "href": "presentation.html#non-linear-development-1",
+    "title": "Git Overview",
+    "section": "Non-linear Development",
+    "text": "Non-linear Development\nReal Life Development:   \nHere things may get more complicated, suppose you start and abandon something (Feature B) or your data-reader gets expanded further during development (Feature A to Feature A-1).\nThis may seem like overkill for a project that you are working on yourself, but if you develop a popular package and others start to ask for features or better yet, offer to add their own features, this is what modern software development looks like."
   },
   {
-    "objectID": "index.html#getting-setup",
-    "href": "index.html#getting-setup",
-    "title": "Git Tutorial",
+    "objectID": "presentation.html#the-basics-of-git",
+    "href": "presentation.html#the-basics-of-git",
+    "title": "Git Overview",
+    "section": "The basics of Git",
+    "text": "The basics of Git\ngit init:initialize a git repository in your current directory. This will create a hidden file called .git.\ngit add file.txt:Tells git to start tracking this file for changes. More likely you will add many files at once.\ngit commit:Tells git that you want to commit all of the changes to the tracked files (from the previous step).\ngit push:Push the changes to a remote repository like Github or gitlab"
+  },
+  {
+    "objectID": "presentation.html#try-it-out",
+    "href": "presentation.html#try-it-out",
+    "title": "Git Overview",
+    "section": "Try it out",
+    "text": "Try it out\nLet’s all try this out in the command line:\n\nOpen a terminal.\nMake a new directory: mkdir learning-git\nMove into that diretory: cd learning-git\nInitialize a repo: git init\n\nCheck what is going on: git status (you should see some about ‘No commits yet’, if it says fatal, no repo was initialized)"
+  },
+  {
+    "objectID": "presentation.html#checking-if-it-worked",
+    "href": "presentation.html#checking-if-it-worked",
+    "title": "Git Overview",
+    "section": "Checking if it worked",
+    "text": "Checking if it worked\n Try running: git status"
+  },
+  {
+    "objectID": "presentation.html#now-make-a-file-and-add-it-to-git",
+    "href": "presentation.html#now-make-a-file-and-add-it-to-git",
+    "title": "Git Overview",
+    "section": "Now Make a file and add it to git",
+    "text": "Now Make a file and add it to git\n\n   touch file.txt #This will make an empty file call file.txt\n   git add file.txt\n   git status\nThese are ‘staged’ changes"
+  },
+  {
+    "objectID": "presentation.html#commit",
+    "href": "presentation.html#commit",
+    "title": "Git Overview",
+    "section": "Commit!",
+    "text": "Commit!\n   git commit\ngit expects a message when you make a commit, so it may open vim editor.\n\nvim: type in your messages, press esc, then :x to write out to the file. Ask if you are stuck!\n\nTip: Make you messages meaningful, but short\nInstead, include an inline message:\n   git commit -m \"This is my commit message\""
+  },
+  {
+    "objectID": "presentation.html#section",
+    "href": "presentation.html#section",
+    "title": "Git Overview",
     "section": "",
-    "text": "For those attending, here things will go much smoother if come with some way to interact with git installed:\nThere are a million ways, but the simplest would be through the command line interface (CLI)\nOn MacOS & Linux (most distros) git is shipped with operating system. The simplest way to check if you have it and what version you are using is to open a terminal (using terminal application) and typing:\ngit --version\nYou should see some repsonse that looks like: git version 2.39.5 (Apple Git-154) On Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs."
+    "text": "git log\n\n\nThis shows our last commit, the hash associated with it, and the message"
+  },
+  {
+    "objectID": "presentation.html#excercise",
+    "href": "presentation.html#excercise",
+    "title": "Git Overview",
+    "section": "Excercise",
+    "text": "Excercise\n\nAdd some text to the file.txt\nAdd the file to git (hint: git add . will add all files in dir)\nCommit the staged files\nView the log"
+  },
+  {
+    "objectID": "presentation.html#reverting-to-old-commits",
+    "href": "presentation.html#reverting-to-old-commits",
+    "title": "Git Overview",
+    "section": "Reverting to Old Commits",
+    "text": "Reverting to Old Commits\nWhat if you want to go back to an older commit?\n\nLast Commit: git revert HEAD (this is like a reverse commit)\nOlder Commit: git checkout 4d95c68fa8060e34f08d9e4309d13873af9a5881 (enter the hash of that commit, not mine)\nThis called a “detached HEAD” –&gt; If you want to go in a direction you need a branch"
+  },
+  {
+    "objectID": "presentation.html#branches-creating",
+    "href": "presentation.html#branches-creating",
+    "title": "Git Overview",
+    "section": "Branches: Creating",
+    "text": "Branches: Creating\n\nThose splits are called branches, this a nice way to try something without writing over the main branch.\n  To Create and Switch to a new Branch:\ngit checkout -b name_of_your_new_branch"
+  },
+  {
+    "objectID": "presentation.html#branches-switching-between",
+    "href": "presentation.html#branches-switching-between",
+    "title": "Git Overview",
+    "section": "Branches: Switching Between",
+    "text": "Branches: Switching Between\ngit branch\n\nshow different branches\n\ngit checkout name_of_branch\n\nchange to the name_of_branch branch\n\ngit branch -D name_of_branch\n\nDelete name_of_branch branch\n\n\nNote: main is the default branch. (Used to be master, but this has been phased out)\n\nExcercise:\nCreate and checkout a new branch. Add a file to it and commit the new file (and any other changes)"
+  },
+  {
+    "objectID": "presentation.html#merging-branches",
+    "href": "presentation.html#merging-branches",
+    "title": "Git Overview",
+    "section": "Merging Branches",
+    "text": "Merging Branches\nOnce you have completed the cool feature that you want to integrate into the main branch, you will need to merge.\nMove into the the branch that you want merged into.\ngit merge name_of_branch\n \n\nYou can get into trouble here if you make changes to your main branch and that will conflict with the changes make in your other branch that you are trying to merge in. This is a bit beyond the scope of what we are talking about here, but it will be illustrated later."
+  },
+  {
+    "objectID": "presentation.html#working-with-github",
+    "href": "presentation.html#working-with-github",
+    "title": "Git Overview",
+    "section": "Working With Github",
+    "text": "Working With Github"
   }
 ]
