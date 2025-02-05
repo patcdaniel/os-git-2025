@@ -1,8 +1,136 @@
 ---
-title: "Git Tutorial"
-format: html
+title: "Git Overview"
+author: "Patrick Daniel"
+format:
+    revealjs: 
+        slide-number: true
+        logo: media/sammy.png
+        preview-links: true
+        css: styles.css
 ---
 
-# OS Skill Share: "Add, Commit, and Push: an introduction to git"
+## "Add, Commit, and Push: an introduction to git" #
+<!-- ![](media/git-poster.png) -->
+<div style="-webkit-column-count: 2;">
+<div>
+![](media/git-poster.png){top="170" left="100" width="400" }
+</div>
+<!-- <img src="media/git-poster.png" width=400> -->
+<div>
+        A guide to demystifying and getting started with version control.
+</div>
+</div>
 
-This website provides a step-by-step guide to using Git for version control. Click on **Git Basics** in the navigation bar to get started.
+## Version Control ##
+
+A way of __tracking__ and <u>managing</u> changes made to files overtime.
+<br>  
+__git__ is very popular, but other open VC include:
+
+- Mercurial
+- SVN
+- Source Code Control System
+
+## What is git?##
+![](https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg){width="200"}
+
+__Free, open source, distributed, version control system__  
+
+Git is a software for managing software development through time and space.  
+
+Created by: Linus Torvalds (created the Linux Kernel)
+![](https://upload.wikimedia.org/wikipedia/commons/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg){width="200"}
+
+
+## What about Github? ##
+
+Github is a __Microsoft__ owned business service that is used to store and distribute code repositories (and many other very useful services). <br>
+Some other DevOP git-based repository:
+
+- bitbucket (Atlassian)
+- gitlab (open core: git.ucsc.edu)
+- HuggingFace (for Models and Datasets (large data))
+
+These services all use the `git` software as the foundation for Version Control.
+
+
+## What problems does VC solve? ##
+__Scenario__
+
+::: {.fragment .fade-in}
+```
+You've made some big changes to your code and things aren't working and now your results make no sense. Now you have to thumb through 10 different files called something like `final_PLS_MBAY_Fall_v2_new.py`.
+```
+:::
+
+::: {.fragment .fade-in}
+__Scenario__
+```
+You are working with a collaborator on an analysis and want to incorporate some changes they made without having to start over on your changes.
+```
+:::
+
+::: {.fragment .fade-in}
+__Scenario__
+```
+You published some results and are getting questions about what parameters you used for a model, but you have since developed the project further and don't remeber what you did.
+```
+:::
+
+::: {.fragment .fade-in}
+__Scenario__
+```
+You need to send a project (code,data,figures) to collaborator but things are getting out of control with the number of files.
+```
+:::
+
+## Version contrtol ##
+<div style="-webkit-column-count: 2;">
+
+<div>
+![](https://book.the-turing-way.org/_images/project-history.svg){width="400"}
+</div>
+<!-- <img src="media/git-poster.png" width=400> -->
+<div>
+VC Enables:<br><br>
+<b>Information Proveneance</b><br>
+<b>Reproducabilty</b><br>
+<b>Tidiness</b><br>
+
+</div>
+</div>
+These are all virtues that fall under the FAIR science framework.
+
+::: footer
+FAIR (Findability, Accessibility, Interoperability, and Resue): [Go FAIR ORG](https://www.go-fair.org/fair-principles/)
+:::
+
+
+## However, GitHUB is NOT a Data Repository
+
+There is no guaranetee that something you upload to github will persist. <br>
+
+So if you want to __archive__ data or code with a paper or dataset there are other places to put it so that it will not dissapear one day if you lose your account or Microsoft changes their business models.
+
+See __Zenodo__ or __DataOne__ or more domain specific data repositories (GBIF, OBIS, WOD)
+
+## Basic GIT workflow ##
+
+1. Create files - these may contain text, code or both.
+2. Work on these files, by changing, deleting or adding new content.
+3. Create a snapshot of the file status (also known as version) at this time.
+4. Document what was changed in the version history of that file.
+
+
+::: footer
+Text and Figures from: https://book.the-turing-way.org
+:::
+
+## Linear Development ##
+
+<br>
+<br>
+![](https://book.the-turing-way.org/_images/main-branch.png)
+<br>
+<br>
+Suppose you need to get back to a previous version of your code.
