@@ -1,0 +1,8 @@
+---
+title: "Git Tutorial"
+format: html
+---
+
+# OS Skill Share: "Add, Commit, and Push: an introduction to git"
+
+This website provides a step-by-step guide to using Git for version control. Click on **Git Basics** in the navigation bar to get started.
