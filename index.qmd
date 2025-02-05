@@ -28,7 +28,7 @@ You should see some repsonse that looks like:
 
 `git version 2.39.5 (Apple Git-154)`
 
-On Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs.
+**On Windows** you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs.
 
 ### Afterwards
 

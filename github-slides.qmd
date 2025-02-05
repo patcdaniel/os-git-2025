@@ -1,0 +1,139 @@
+---
+title: "Using GitHub for Research"
+format:
+    revealjs: 
+        slide-number: true
+        preview-links: true
+        css: styles.css
+---
+
+# [Introduction]{style="font-size: 38px;"}
+::: {.incremental}
+
+- **GitHub** is a powerful (and __Privately Owned__) tool for version control and collaboration.
+- It is widely used in both industry and academia.
+:::
+
+# [Benefits for Researchers]{style="font-size: 38px;"}
+::: {.incremental}
+- **Version Control**: Track changes to your code and documents.
+- **Collaboration**: Work with colleagues and share your work with the community.
+- **Reproducibility**: Ensure your research can be replicated by others.
+:::
+
+# [Set Up a Remote Repository]{style="font-size: 38px;"}
+
+Options:  
+
+::: {.incremental}
+
+- Start on Github and __`clone`__ it to your computer
+
+OR
+
+- Link a repository (__`git init`__) on your computer (local) to a remote repository on Github.
+:::
+
+# [Github Projects]{style="font-size: 38px;"}
+
+:::: {.columns}
+::: {.column width="40%"}
+![](media/gitlab-repo.png){width="400" }
+:::
+::: {.column width="60%"}
+
+::: {.incremental}
+
+- __README.md__: Project description in Markdown
+- __.gitignore__: tells git what files to skip (ex. large datasets)
+- __LICENSE__: tells others how or if they can use your code
+- CODE or Textfiles: (Notebooks look great here)
+:::
+:::
+::::
+
+# [Other Benefits]{style="font-size: 38px;"}
+
+:::: {.columns}
+::: {.column width="40%"}
+![](media/gitlab-nb.png){width="400" }
+<p style='font-size:14px;'>Jupyter Notebook running a python analysis and rendered on gitlab</p>
+:::
+::: {.column width="60%"}
+
+- Notebooks Can be easily rendered.  
+- Make interactive webpages --> GH-Pages
+- Running automatic testing --> (CLI, GH Actions).
+- Host files for other web applications
+
+:::
+::::
+
+# [Special File: `README.md`]{style="font-size: 38px;"}
+
+Markdown (.md) file --> Simplified formatting language  
+
+This file is automatically rendered on the repo page. This is were you can give instructions for what the repo is, how to get it running, embed some results or equations.
+
+# [Special File: `.gitignore`]{style="font-size: 38px;"}
+
+Plain text, hidden file (begins with a period) to specify any specific or broad files that you do not want to track.
+
+::: {.incremental}
+
+- By file extension (`*.csv`), 
+- By directory (`big_data/`), 
+- By other wildcards (`*_secrets.pem`)
+:::
+
+# [New git Commands]{style="font-size: 38px;"}
+::: {.incremental}
+- `git clone`: Clone an existing repository from github.
+- `git push`: Push changes to a remote repository (github).
+- `git pull`: Pull changes from a remote repository (github).
+:::
+
+# [Collaboration]{style="font-size: 38px;"}
+::: {.incremental}
+- **Forking**: Create a personal copy of someone else's repository. 
+- **Pull Requests**: Propose changes to a repository.
+- **Issues**: Track bugs and feature requests.
+::: 
+
+# [Branch vs Fork]{style="font-size: 38px;"}
+::: {.incremental}
+
+- **Branch**: A branch is a parallel version of your repository __within the same project__. You probably don't want to give a stranger this level of access.
+
+- **Fork**: A fork is a personal copy of someone else's repository. It allows you (or someone else) to make changes to the project independently without effecting you code.
+
+- You can _propose_ changes from a __`branch`__ or __`fork`__ via a __`pull request`__.
+:::
+
+# [Best Practices Tips]{style="font-size: 38px;"}
+<h3>_You in 6 months is you most important collaborator_.</h3>
+
+::: {.incremental}
+- **Write Clear Commit Messages**: Describe your changes in detail.
+- **Use Branches**: Work on new features or fixes in separate branches.
+- **Document Your Code**: Use README files and comments to explain your work.
+:::
+
+# [GroupExercise]{style="font-size: 38px;"}
+
+__Goal:__ `Fork` and `Clone` a remote repository to your machine. Make a change to the repositoy, add your name to README.md file and push the changes back to your forked repository on Github.
+
+__Repository : https://bit.ly/git-os__
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](/media/gh-pr.png){}
+:::
+
+::: {.column width="40%"}
+__Then: submit a pull request on Github__
+:::
+
+::::
