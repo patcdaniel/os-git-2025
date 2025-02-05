@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "presentation.html#add-commit-and-push-an-introduction-to-git",
+    "href": "presentation.html#add-commit-and-push-an-introduction-to-git",
+    "title": "Git Overview",
+    "section": "“Add, Commit, and Push: an introduction to git”",
+    "text": "“Add, Commit, and Push: an introduction to git”\n\n\n\n\n\n\n\n    A guide to demystifying and getting started with version control."
+  },
+  {
+    "objectID": "presentation.html#version-control",
+    "href": "presentation.html#version-control",
+    "title": "Git Overview",
+    "section": "Version Control",
+    "text": "Version Control\nA way of tracking and managing changes made to files overtime. \ngit is very popular, but other open VC include:\n\nMercurial\nSVN\nSource Code Control System"
+  },
+  {
+    "objectID": "presentation.html#what-is-git",
+    "href": "presentation.html#what-is-git",
+    "title": "Git Overview",
+    "section": "What is git?",
+    "text": "What is git?\n\nFree, open source, distributed, version control system\nGit is a software for managing software development through time and space.\nCreated by: Linus Torvalds (created the Linux Kernel)"
+  },
+  {
+    "objectID": "presentation.html#what-about-github",
+    "href": "presentation.html#what-about-github",
+    "title": "Git Overview",
+    "section": "What about Github?",
+    "text": "What about Github?\nGithub is a Microsoft owned business service that is used to store and distribute code repositories (and many other very useful services).  Some other DevOP git-based repository:\n\nbitbucket (Atlassian)\ngitlab (open core: git.ucsc.edu)\nHuggingFace (for Models and Datasets (large data))\n\nThese services all use the git software as the foundation for Version Control."
+  },
+  {
+    "objectID": "presentation.html#what-problems-does-vc-solve",
+    "href": "presentation.html#what-problems-does-vc-solve",
+    "title": "Git Overview",
+    "section": "What problems does VC solve?",
+    "text": "What problems does VC solve?\nScenario\n\nYou've made some big changes to your code and things aren't working and now your results make no sense. Now you have to thumb through 10 different files called something like `final_PLS_MBAY_Fall_v2_new.py`.\n\n\nScenario\nYou are working with a collaborator on an analysis and want to incorporate some changes they made without having to start over on your changes.\n\n\nScenario\nYou published some results and are getting questions about what parameters you used for a model, but you have since developed the project further and don't remeber what you did.\n\n\nScenario\nYou need to send a project (code,data,figures) to collaborator but things are getting out of control with the number of files."
+  },
+  {
+    "objectID": "presentation.html#version-contrtol",
+    "href": "presentation.html#version-contrtol",
+    "title": "Git Overview",
+    "section": "Version contrtol",
+    "text": "Version contrtol\n\n\n\n\n\n\nVC Enables: Information Proveneance Reproducabilty Tidiness\n\n\nThese are all virtues that fall under the FAIR science framework.\n\nFAIR (Findability, Accessibility, Interoperability, and Resue): Go FAIR ORG"
+  },
+  {
+    "objectID": "presentation.html#however-github-is-not-a-data-repository",
+    "href": "presentation.html#however-github-is-not-a-data-repository",
+    "title": "Git Overview",
+    "section": "However, GitHUB is NOT a Data Repository",
+    "text": "However, GitHUB is NOT a Data Repository\nThere is no guaranetee that something you upload to github will persist. \nSo if you want to archive data or code with a paper or dataset there are other places to put it so that it will not dissapear one day if you lose your account or Microsoft changes their business models.\nSee Zenodo or DataOne or more domain specific data repositories (GBIF, OBIS, WOD)"
+  },
+  {
+    "objectID": "presentation.html#basic-git-workflow",
+    "href": "presentation.html#basic-git-workflow",
+    "title": "Git Overview",
+    "section": "Basic GIT workflow",
+    "text": "Basic GIT workflow\n\nCreate files - these may contain text, code or both.\nWork on these files, by changing, deleting or adding new content.\nCreate a snapshot of the file status (also known as version) at this time.\nDocument what was changed in the version history of that file.\n\n\nText and Figures from: https://book.the-turing-way.org"
+  },
+  {
+    "objectID": "presentation.html#linear-development",
+    "href": "presentation.html#linear-development",
+    "title": "Git Overview",
+    "section": "Linear Development",
+    "text": "Linear Development\n     Suppose you need to get back to a previous version of your code."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Git Tutorial",
+    "section": "",
+    "text": "OS Skill Share: “Add, Commit, and Push: an introduction to git”\nThis website provides a step-by-step guide to using Git for version control. Click on Git Basics in the navigation bar to get started."
+  }
+]
