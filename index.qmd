@@ -1,8 +1,47 @@
 ---
-title: "Git Tutorial"
+title: "OS Skill Share: Add, Commit, and Push: an introduction to git"
 format: html
 ---
 
-# OS Skill Share: "Add, Commit, and Push: an introduction to git"
+![https://xkcd.com/1597/](https://imgs.xkcd.com/comics/git.png){width="250px"}
+
 
 This website provides a step-by-step guide to using Git for version control. Click on **Git Basics** in the navigation bar to get started.
+
+## Goal
+
+The goal of this Skill Sharing Workshop is to get everyone introduced to **Version Control** in scientific computing using `git` and to get hands on practice "developing" a project with other students.
+
+## Getting Setup
+
+### Installing the git CLI
+
+For those attending, here things will go much smoother if come with some way to interact with git installed:
+
+There are a million ways, but the simplest would be through the **command line interface (CLI)**
+
+**On MacOS & Linux (most distros)** git is shipped with operating system. The simplest way to check if you have it and what version you are using is to open a terminal (using terminal application) and typing:
+
+`git --version`
+
+You should see some repsonse that looks like:
+
+`git version 2.39.5 (Apple Git-154)`
+
+On Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs.
+
+### Afterwards
+
+Once we get beyond the CLI, you may want to move to your code editor or IDE of choice (R studio, pycharm, VS Code etc) all have git integrated into them.
+
+In VS Code:
+
+![](/media/vscode-git.png){width="250px;"}
+
+In RStudio:
+
+If there is an existing repository, you have to add a "New Project" in that directory first, then you will see:
+
+![](/media/rstudio-git.png)
+
+**These may be a more comfortable way to manage your project, but under the hood, they are really just doing the same couple of commands with \`git\` that we are going to use**

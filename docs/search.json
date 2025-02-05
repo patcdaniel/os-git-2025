@@ -74,6 +74,20 @@
     "href": "index.html",
     "title": "Git Tutorial",
     "section": "",
-    "text": "OS Skill Share: “Add, Commit, and Push: an introduction to git”\nThis website provides a step-by-step guide to using Git for version control. Click on Git Basics in the navigation bar to get started."
+    "text": "This website provides a step-by-step guide to using Git for version control. Click on Git Basics in the navigation bar to get started.\n\n\nThe goal of this Skill Sharing Workshop is to get everyone introduced to Version Control in scientific computing using git and to get hands on practice “developing” a project with other students.\n## Getting Setup ##\nFor those attending, here things will go much smoother if come with some way to interact with git installed:\nThere are a million ways, but the simplest would be through the command line interface (CLI) which is included with MacOS or most Linux distros.\nOn Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs."
+  },
+  {
+    "objectID": "index.html#goal",
+    "href": "index.html#goal",
+    "title": "Git Tutorial",
+    "section": "",
+    "text": "The goal of this Skill Sharing Workshop is to get everyone introduced to Version Control in scientific computing using git and to get hands on practice “developing” a project with other students.\n## Getting Setup ##\nFor those attending, here things will go much smoother if come with some way to interact with git installed:\nThere are a million ways, but the simplest would be through the command line interface (CLI) which is included with MacOS or most Linux distros.\nOn Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs."
+  },
+  {
+    "objectID": "index.html#getting-setup",
+    "href": "index.html#getting-setup",
+    "title": "Git Tutorial",
+    "section": "",
+    "text": "For those attending, here things will go much smoother if come with some way to interact with git installed:\nThere are a million ways, but the simplest would be through the command line interface (CLI)\nOn MacOS & Linux (most distros) git is shipped with operating system. The simplest way to check if you have it and what version you are using is to open a terminal (using terminal application) and typing:\ngit --version\nYou should see some repsonse that looks like: git version 2.39.5 (Apple Git-154) On Windows you might want to download git for windows (https://git-scm.com/downloads/win) which includes a Git Bash which can use the CLIs."
   }
 ]

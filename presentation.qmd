@@ -134,3 +134,158 @@ Text and Figures from: https://book.the-turing-way.org
 <br>
 <br>
 Suppose you need to get back to a previous version of your code.
+
+This alone solves a lot of problems
+
+## Non-linear Development ##
+__Adding a Feature:__
+<br>
+![](https://book.the-turing-way.org/_images/one-branch.png)
+<br>
+
+You maybe working on a new feature that allows you to read different types of files, but processes still runs the same analysis. 
+
+__When that standalone feature is completed, it can be added back into the main working branch__
+
+## Non-linear Development ##
+__Real Life Development:__
+<br>
+![](https://book.the-turing-way.org/_images/sub-branch.png)
+<br>
+
+Here things may get more complicated, suppose you start and abandon something (Feature B) or your data-reader gets expanded further during development (Feature A to Feature A-1).
+
+This may seem like overkill for  a project that you are working on yourself, but if you develop a popular package and others start to ask for features or better yet, offer to add their own features, this is what modern software development looks like.
+
+# Start Your Engines #
+
+## The basics of Git ##
+
+__`git init`__:_initialize_ a git repository in your current directory.
+This will create a hidden file called .git.  
+__`git add file.txt`__:Tells git to start tracking this file for changes. More likely you will add many files at once.  
+__`git commit`__:Tells git that you want to commit all of the changes to the tracked files (from the previous step).  
+__`git push`__:Push the changes to a remote repository like __Github__ or __gitlab__
+
+## Try it out ##
+
+__Let's all try this out in the `command line`__:
+
+- Open a terminal.
+- Make a new directory: `mkdir learning-git`
+- Move into that diretory: `cd learning-git`
+- Initialize a repo: `git init`  
+- Check what is going on: `git status` (you should see some about 'No commits yet', if it says fatal, no repo was initialized)  
+
+## Checking if it worked ##
+<br>
+Try running: __`git status`__
+<br>
+![](media/git-status.png)
+
+## Now Make a file and add it to git ##
+<br>
+
+```bash
+   touch file.txt #This will make an empty file call file.txt
+   git add file.txt
+   git status
+```
+__These are 'staged' changes__
+![](media/git-status-2.png)
+
+## Commit! ##
+
+
+
+```bash
+   git commit
+```
+
+
+git expects a message when you make a commit, so it may open `vim` editor.   
+
+- `vim`: type in your messages, press `esc`, then `:x` to write out to the file. Ask if you are stuck!
+
+__Tip: Make you messages meaningful, but short__
+
+__Instead, include an inline message:__
+```bash
+   git commit -m "This is my commit message"
+```
+
+
+##
+__`git log`__
+
+![](media/git-log.png)
+
+<p style='font-size:16px;'>This shows our last commit, the hash associated with it, and the message</p>
+
+
+## Excercise ##
+
+1. Add some text to the file.txt
+2. Add the file to git (hint: __`git add .`__ will add all files in dir)
+3. Commit the staged files
+4. View the log
+
+## Reverting to Old Commits
+
+What if you want to go back to an older commit?
+
+![](media/git-log-2.png)
+
+Last Commit: __`git revert HEAD`__ (this is like a reverse commit)
+
+Older Commit: __`git checkout 4d95c68fa8060e34f08d9e4309d13873af9a5881`__ (enter the hash of that commit, not mine)
+
+This called a __"detached HEAD"__ --> If you want to go in a direction you need a __branch__
+
+## Branches: Creating ##
+![](https://book.the-turing-way.org/_images/one-branch.png)
+
+Those splits are called branches, this a nice way to try something without writing over the `main` branch.
+
+<br>
+<br>
+To Create and Switch to a new Branch:  
+
+  
+__`git checkout -b name_of_your_new_branch`__
+
+## Branches: Switching Between ##
+
+__`git branch`__<p style="font-size: 22px;">show different branches</p>
+
+__`git checkout name_of_branch`__<p style="font-size: 22px;">change to the `name_of_branch` branch</p>
+
+__`git branch -D name_of_branch`__<p style="font-size: 22px;">Delete `name_of_branch` branch</p>
+
+
+<p style="font-size: 22px;">Note: `main` is the default branch. (Used to be `master`, but this has been phased out)</p>
+
+__Excercise__:
+
+Create and checkout a new branch. Add a file to it and commit the new file (and any other changes)
+
+## Merging Branches
+
+Once you have completed the cool feature that you want to integrate into the `main` branch, you will need to __`merge`__.
+
+Move into the the branch that you want merged into.
+
+__`git merge name_of_branch`__
+
+<br>
+<br>
+
+<p style="font-size: 22px;">You can get into trouble here if you make changes to your `main` branch and that will conflict with the changes make in your other branch that you are trying to merge in. This is a bit beyond the scope of what we are talking about here, but it will be illustrated later.</p>
+
+# Break #
+
+Let's take a short break. Ask Question
+
+The next part will be working with github.
+
+## Working With Github ##
